@@ -1,0 +1,19 @@
+<!-- *ngIf="shouldRun" -->
+<!-- <mat-drawer-container class="example-container">
+  <mat-drawer mode="over" #drawerRef position="end">
+    <input #newFood type="text" placeholder="Enter a new food" />
+    <button (click)="addFood(newFood.value)">Add food</button>
+  </mat-drawer>
+  <mat-drawer-content>
+    <h2>Content</h2>
+    <app-child [data]="foods"></app-child>
+    <button (click)="drawerRef.toggle()">toggle side nav</button>
+  </mat-drawer-content>
+</mat-drawer-container> -->
+
+<p>From: appModule: {{ votes }}</p>
+<p>From: featureModule: <app-feature></app-feature></p>
+<button routerLink="lazy">lazy load module</button>
+<button (click)="refresh()">refresh</button>
+
+<router-outlet></router-outlet>
